@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7iVJWT0cLS1IE88QCOjiDlHQh2T3rtM6R+KA21nK02Jg9jnBvOQtdk90eAPoH9bB3zGLsF+n5HqXhL2X7HBkdQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Majesty\\source\\repos\\NotebookPro\\NotebookPro\\NotebookPro.iOS\\NotebookPro.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Majesty\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}
