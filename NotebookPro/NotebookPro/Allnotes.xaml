@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="Notebook Pro"
+             mc:Ignorable="d"
+             x:Class="NotebookPro.Allnotes">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="searchbig.png" x:Name="search" Clicked="search_Clicked"/>
+        <ToolbarItem IconImageSource="menubig.png" x:Name="menu" Clicked="menu_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="SizeProportional">
+            <StackLayout>
+                <ListView x:Name="NotesList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}"/>
+                        
+                                
+                                <!--<StackLayout Padding="10, 5"
+                                         Orientation="Horizontal">
+                                    --><!--<BoxView Color="{Binding FavoriteColor}" />--><!--
+                                    <StackLayout VerticalOptions="Center"
+                                             Spacing="0">
+                                        
+                                        <Label />
+                                        <Label Text="{Binding Birthday, StringFormat='{0:d}'}" FontSize="10"/>
+                                    </StackLayout>-->
+                 
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+        <ImageButton
+            AbsoluteLayout.LayoutBounds="0.95,0.95,55,55"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="#16ac8f"
+            CornerRadius="30"
+            HeightRequest="20"
+            Padding="10"
+            Source="plusbig.png"
+            WidthRequest="20"
+            x:Name="btn_create"
+            Clicked="btn_create_Clicked"/>
+    </AbsoluteLayout>
+</ContentPage>

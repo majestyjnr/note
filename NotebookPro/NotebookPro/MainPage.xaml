@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Type Note"
+             x:Class="NotebookPro.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="savebig.png" Text="Save" x:Name="saveButton" Clicked="saveButton_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Margin="8,8,8,0">
+        <Editor x:Name="_editor"
+                Placeholder="Type notes here..."
+                VerticalOptions="FillAndExpand"
+                TextColor="#34344b"/>
+    </StackLayout>
+
+</ContentPage>
